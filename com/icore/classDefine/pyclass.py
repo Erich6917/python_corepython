@@ -49,5 +49,6 @@ class sample(speaker,student):
     a =''  
     def __init__(self,n,a,w,g,t):  
         student.__init__(self,n,a,w,g)  
-        speaker.__init__(self,n,t)  
+        speaker.__init__(self,n,t)
+        print 'init'
 
