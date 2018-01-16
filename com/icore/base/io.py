@@ -40,6 +40,28 @@ def loaddemo():
     #     print ii
 
 
+def demo_overide():
+
+    """
+        防止覆盖文件
+    """
+    import os
+    if not os.path.exists('somefile'):
+        with open('somefile', 'wt') as f:
+            f.write('Hello\n')
+    else:
+        print('File already exists!')
+
+
+if __name__ == '__main__':
+    demo_overide()
+
 # eachFile()
 # loaddemo()
 
+# if __name__ == '__main__':
+#     # os.chdir('C:/Personal')
+#     # print os.getcwd()
+#     fd = os.open('C:/Personal/test', os.O_RDWR)
+#     # os.fchdir(fd)
+#     # print os.getcwd()
