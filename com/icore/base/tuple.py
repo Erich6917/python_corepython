@@ -1,10 +1,9 @@
-# coding=-utf8
-'''
-Created on 2017年9月6日
-
-@author: Administrator
-'''
-
+# -*- coding: utf-8 -*-
+# @Time    : 2017/12/13
+# @Author  : LIYUAN134
+# @File    : unicode.py
+# @Commment:
+#
 
 # Python的元组与列表类似，不同之处在于元组的元素不能修改。
 # 元组使用小括号，列表使用方括号。

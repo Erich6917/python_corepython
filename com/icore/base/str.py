@@ -212,6 +212,19 @@ def demo_just():
     print format(x, '^10.2f')
 
 
+def demo_just():
+    s1 = [u'陕西>西安>ocD>page5']
+    s2 = ['@https://www.tianyancha.com/company/2943615038', '@https://www.tianyancha.com/company/2977075946']
+    s3 = [u'@西安德实绿洁汽车燃气有限公司', u'@西安鹏华能源发展有限公司 ']
+    for ii in range(2):
+        a = s1[0].ljust(25)
+        b = s2[ii].ljust(50)
+        c = s3[ii]
+        msg = a + b + c
+        print len(a), len(b), len(c), len(msg)
+        print msg
+
+
 def demo_format():
     # 创建一个内嵌变量的字符串，变量被它的值所表示的字符串替换掉。
 
@@ -227,6 +240,7 @@ def demo_format():
     # n = 37
     # print '%(name) has %(n) messages.' % vars()
 
+
 def demo_format2():
     s = "Look into my eyes, look into my eyes, the eyes, the eyes, \
     the eyes, not around the eyes, don't look around the eyes, \
@@ -240,7 +254,8 @@ def demo_format2():
     print(textwrap.fill(s, 40, subsequent_indent='^^^^^^^^^^'))
     printLine()
 
-demo_format2()
+
+demo_just()
 
 
 def demo_type():

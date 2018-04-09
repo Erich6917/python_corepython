@@ -157,4 +157,43 @@ def findProvinces():
         print ii[0], ii[1]
 
 
-findProvinces()
+def demo_pattern():
+    msg = '178字已全部书写完毕'
+    msg = '已完成 4392 字'
+    pattern = re.match('[^0-9]*([0-9]+).*', msg)
+    if pattern:
+        total = pattern.group(1)
+        print total
+    else:
+        print 'not match'
+
+
+def demo_three():
+    total = 178
+    page_size = total / 36
+
+    # 方法一
+    # page_size = page_size if (total % 36 == 0) else  page_size + 1
+    # 方法二
+    page_size = (page_size + 1, page_size)[total % 36 == 0]
+    # 方法三
+    # if total % 36 == 0:
+    #     pass
+    # else:
+    #     page_size += 1
+
+    print 'page_size', page_size
+
+
+def start():
+    """
+        括号匹配
+    """
+    pattern = u'(\([^)]+\))|(（[^）]+）)'  # 写法1
+    pattern = u'[(（][^)）]*[)）]'  # 写法2
+    pattern = u'\(.*?\)'  # 写法3 仅支持 英文
+    pattern = u'[(（].*?[)）]'  # 写法3.1 支持中英混写，即中文左括号和英文右括号
+    pattern = u'\(.*?\)|(\（.*?\）)'  # 写法3.2 不支持混写
+    # c = re.sub(pattern, ' ', u'（啊实打实的 ）阿萨德阿萨德阿萨德玩的阿萨德(123311)asd()')
+    c = re.sub(pattern, ' ', '(啊实打实的 )阿萨德阿萨德阿萨德玩的阿萨德(123311)asd')
+    print c
