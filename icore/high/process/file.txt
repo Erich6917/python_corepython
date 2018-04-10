@@ -1,0 +1,22 @@
+VVVVVVVVVVVVVVVVVVVVVVVVVVV 2018-01-04 14:56:02.194000
+Locked acquired directly 
+Locked acquired directly 
+Locked acquired directly 
+Locked acquired directly 
+Locked acquired directly 
+Locked acquired directly 
+Locked acquired directly 
+Locked acquired directly 
+Locked acquired directly 
+Locked acquired directly 
+===========================  2018-01-04 14:56:02.195000
+Locked acquired via with 
+Locked acquired via with 
+Locked acquired via with 
+Locked acquired via with 
+Locked acquired via with 
+Locked acquired via with 
+Locked acquired via with 
+Locked acquired via with 
+Locked acquired via with 
+Locked acquired via with 
