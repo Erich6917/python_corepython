@@ -28,9 +28,13 @@ def date_create():
 
 
 def date_converting():
+    """
+        时间类型转换，后续新增时间工具类
+    """
     text = '2012-09-20'
     y = datetime.strptime(text, '%Y-%m-%d')
     z = datetime.now()
+    infos(z - y)
 
 
 date_converting()
