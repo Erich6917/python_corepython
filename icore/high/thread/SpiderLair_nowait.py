@@ -72,9 +72,9 @@ class Producer(threading.Thread):
             urls1 = findSinaUrl()
             urls2 = findSouhuUrl()
 
-            # print "Producer acquiring the lock " + str(self.name) + "th time!\n"
+            # print "Producer acquiring the lock " + strings(self.name) + "th time!\n"
             con.acquire()
-            # print "Producer acquired the lock " + str(self.name) + "th time!\n"
+            # print "Producer acquired the lock " + strings(self.name) + "th time!\n"
 
             if flag:
                 print self.name, "Producer wait\n"
@@ -105,10 +105,10 @@ class Consumer(threading.Thread):
         time.sleep(2)
         print "Consumer " + self.name + " Start!\n"
         while True:
-            # print "Producer acquiring the lock " + str(self.name) + "th time!\n"
+            # print "Producer acquiring the lock " + strings(self.name) + "th time!\n"
             print self.name,'MAIN'
             # con.acquire()
-            # print "Producer acquired the lock " + str(self.name) + "th time!\n"
+            # print "Producer acquired the lock " + strings(self.name) + "th time!\n"
             rturls = self.box.getUrls()
             if not flag:
                 print self.name, "Consumer wait\n"
