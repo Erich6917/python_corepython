@@ -10,7 +10,7 @@
 import threading
 import time
 
-import thread
+import icore.high.thread
 
 exitFlag = 0
 
@@ -33,7 +33,7 @@ class myThread(threading.Thread):  # 继承父类threading.Thread
 def print_time(threadName, delay, counter):
     while counter:
         if exitFlag:
-            thread.exit()
+            icore.high.thread.exit()
         time.sleep(delay)
         print "%s: %s" % (threadName, time.ctime(time.time()))
         counter -= 1
