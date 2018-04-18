@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2018/2/1 
-# @Author  : LIYUAN134
-# @File    : lambda_01.py
+# @Author  : ErichLee ErichLee@qq.com
+# @File    : LambdaBase.py
 # @Commment: 
 #
 
@@ -14,12 +14,10 @@ Python中，也有几个定义好的全局函数方便使用的，filter, map, r
 
 
 def run_demo1():
-    fun_d1 = lambda x: x + 1
-    print fun_d1(1)
-    print fun_d1(2)
-    # # 以上lambda等同于以下函数
-    # def func(x):
-    #     return (x + 1)
+    funs = lambda x: x + 1
+
+    print funs(1)
+    print funs(2)
 
 
 def run_demo2():
@@ -39,6 +37,18 @@ def run_demo2():
     上面例子中的map的作用，非常简单清晰。
     但是，Python是否非要使用lambda才能做到这样的简洁程度呢？
     在对象遍历处理方面，其实Python的for..in..if语法已经很强大，并且在易读上胜过了lambda。 　　
-　　比如上面map的例子，可以写成:print ([x * 2 + 10 for x in foo]) 非常的简洁，易懂。 　　
-　　filter的例子可以写成:print ([x for x in foo if x % 3 == 0]) 同样也是比lambda的方式更容易理解。
+　　 比如上面map的例子，可以写成:print ([x * 2 + 10 for x in foo]) 非常的简洁，易懂。 　　
+　　 filter的例子可以写成:print ([x for x in foo if x % 3 == 0]) 同样也是比lambda的方式更容易理解。
     """
+
+
+def run_demo3():
+    funcs = [lambda x: x + n for n in range(5)]
+    for f in funcs:
+        print f(0)
+
+    print
+
+    funcs = [lambda x, n=n: x + n for n in range(5)]
+    for f in funcs:
+        print f(0)
