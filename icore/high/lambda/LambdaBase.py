@@ -4,6 +4,7 @@
 # @File    : LambdaBase.py
 # @Commment: 
 #
+from util.loggerUtil import *
 
 """
 可以这样认为,lambda作为一个表达式，定义了一个匿名函数，上例的代码x为入口参数，x+1为函数体。
@@ -11,6 +12,58 @@
 Python中，也有几个定义好的全局函数方便使用的，filter, map, reduce。
 
 """
+
+
+def lam_demo1():
+    """
+    lambda [arg1 [,arg2, ... argN]] : expression
+    lambda函数可以在定义时直接被调用，比如
+    """
+    ljinfos("直接调用：")
+    infos((lambda x, y: x - y)(3, 4))
+
+    ljinfos("带if/else：")
+    infos((lambda x, y: x if x < y else y)(1, 2))
+
+    ljinfos("lambda嵌套")
+    infos((lambda x: (lambda y: (lambda z: x + y + z)(1))(2))(3))
+
+    ljinfos("递归：")
+    fins = lambda n: 1 if n == 0 else n * fins(n - 1)
+    infos(fins(3))
+    f = lambda fins, n: 1 if n == 0 else n * fins(fins, n - 1)
+    print f(f, 4)
+
+
+def lam_demo2():
+    """
+
+    """
+    print map(lambda x: x * x, [y for y in range(10)])
+
+    a = [1, 2, 3]
+    r = []
+    for each in a:
+        r.append(each + 1)
+    print r
+    print '两种写法相同'
+    print map(lambda x: x + 1, [y for y in range(1, 4)])
+
+
+lam_demo2()
+
+
+def lam_msg():
+    """
+    可拼接名字输出
+    """
+    namelist = ['X-Man', 'spider-man', 'iron-man', 'super-man', 'pang-man', ]
+
+    sqls = lambda group, remark: " update l_poi_table a set a.name =" + group + \
+                                 " where (a.remark  is null or a.remark =" + remark + " ) " + \
+                                 " and a.is_collected = -1"
+    for name in namelist:
+        print sqls(name, "REMARK_BY_" + name)
 
 
 def run_demo1():
