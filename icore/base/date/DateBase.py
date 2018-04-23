@@ -53,9 +53,56 @@ def date_base():
     infos(">>>三天前")
     infos(datetime.now() - timedelta(days=3))
 
+    ljinfos("4. 获取当天开始和结束时间")
+    # infos(datetime.combine(date.today(), time.min()))
+
+    ljinfos("5. 获取两个datetime的时间差")
+    infos((datetime(2015, 1, 13, 12, 0, 0) - datetime.now()).total_seconds())
+
+    ljinfos("6. 获取本周/本月/上月最后一天")
+    today = date.today()
+    sunday = today + timedelta(6 - today.weekday())
+    ljinfos("本周末》", sunday)
+
+    first = date(day=1, month=today.month, year=today.year)
+    lastMonth = first - timedelta(days=1)
+    ljinfos("上月末》", lastMonth)
 
 
-date_base()
+def date_change():
+    """
+    几个关系之间的转化
+
+    Datetime Object / String / timestamp / time tuple
+    """
+    ljinfos("datetime -> string")
+    infos(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+
+    ljinfos("string -> datetime")
+    infos(datetime.strptime("2014-12-31 18:20:10", "%Y-%m-%d %H:%M:%S"))
+
+    ljinfos("datetime -> timetuple")
+    infos(datetime.now().timetuple())
+
+    ljinfos("timetuple -> datetime")
+
+    ljinfos("datetime -> date")
+    infos(datetime.now().date())
+
+    ljinfos("date -> datetime")
+    infos(date.today())
+    # today = date.today()
+    # datetime.combine(today, time())
+
+    ljinfos("datetime -> timestamp")
+    now = datetime.now()
+    timestamp = time.mktime(now.timetuple())
+    infos(timestamp)
+
+    ljinfos("timestamp -> datetime")
+    infos(datetime.fromtimestamp(1421077403.0))
+
+date_change()
 
 
 def date_create():
