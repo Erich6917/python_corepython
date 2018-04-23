@@ -8,7 +8,7 @@ import os
 import re
 from calendar import month_abbr
 
-from util.loggerUtil import infos, printLine
+from util.loggerUtil import infos, println
 
 
 def str_sub():
@@ -78,9 +78,9 @@ def str_format2():
     # print(textwrap.fill(s, 70))
     # print(textwrap.fill(s, 40))
     print(textwrap.fill(s, 40, initial_indent='^^^^^^^^^^'))
-    printLine()
+    println()
     print(textwrap.fill(s, 40, subsequent_indent='^^^^^^^^^^'))
-    printLine()
+    println()
 
 
 def str_split():
@@ -151,7 +151,7 @@ def str_join():
     print(a + ':' + b + ':' + c)  # Ugly
     print(':'.join([a, b, c]))  # Still ugly
     # print(a, b, c, sep=':')  # Better
-    printLine()
+    println()
 
 
 # print str_sub()

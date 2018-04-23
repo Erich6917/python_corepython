@@ -18,19 +18,19 @@ def num_round():
     ljinfos("round(-1.27, 1)", round(-1.27, 1))
     ljinfos("round(-1.22, 1)", round(-1.22, 1))
     ljinfos("round(1.25361, 3)", round(1.25361, 3))
-    printLine()
+    println()
 
     infos("传给round() 函数的ndigits 参数可以是负数，这种情况下，舍入运算会作用在十位、百位、千位等上面")
     a = 1627731
     ljinfos("round(a, -1)", round(a, -1))
     ljinfos("round(a, -2)", round(a, -2))
-    printLine()
+    println()
 
     infos("不要将舍入和格式化输出搞混淆,如果只是输出一定宽度的数字没必要调用round函数，直接用format格式化即可")
     x = 1.23456
     ljinfos("format(x, '0.2f')", format(x, '0.2f'))
     ljinfos("format(x, '0.3f')", format(x, '0.3f'))
-    printLine()
+    println()
 
 
 def num_deciamls():
@@ -84,18 +84,18 @@ def num_random():
     infos("每次单个随机数 random.choice(values)")
     for i in range(1, 5):
         infos(i, '随机数 > ', random.choice(values))
-    printLine()
+    println()
 
     infos("每次多个随机数 random.sample(values, 2)")
     for i in range(1, 5):
         infos(i, '随机数 > ', random.sample(values, 2))
-    printLine()
+    println()
 
     infos("打乱元素顺序： random.shuffle(values)")
     for i in range(1, 3):
         random.shuffle(values)
         infos(values)
-    printLine()
+    println()
 
     infos("随机数的生成 random.randint(0,10)")
     for i in range(1, 5):
