@@ -21,7 +21,7 @@ def infos(*args):
 
 def ljinfos(lmgs, *args):
     """
-    :param lmgs: 打印头 需要格式化长度
+    :param lmgs: 左对齐打印头 需要格式化长度
     :param args: 变量参数依次打印
     """
     if lmgs:
@@ -34,6 +34,21 @@ def ljinfos(lmgs, *args):
             print each,
     print
 
+def cinfos(lmgs, *args):
+    """
+    :param lmgs: 居中打印头 需要格式化长度
+    :param args: 变量参数依次打印
+    """
+    if lmgs:
+        print '[ ' + lmgs.center(30) + ' ]:',
+    else:
+        print '[ ' + "".center(30) + ' ]:',
 
-def printLine():
+    if any(args):
+        for each in args:
+            print each,
+    print
+
+
+def println():
     print '================================'
