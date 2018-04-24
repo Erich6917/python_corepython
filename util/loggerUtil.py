@@ -34,6 +34,7 @@ def ljinfos(lmgs, *args):
             print each,
     print
 
+
 def cinfos(lmgs, *args):
     """
     :param lmgs: 居中打印头 需要格式化长度
