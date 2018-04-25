@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2018/1/11
-# @Author  : LIYUAN134
+# @Author  : ErichLee ErichLee@qq.com
 # @File    : NumbersBase.py
 # @Commment: python集中集合类型
 #            List 元组 字典
@@ -161,10 +161,6 @@ def list_update():
     print '组合 ', [1, 2, 3] + [4, 5, 6]
     print '重复 ', ['hi!'] * 4
     print 'in ,not in ', (3 in [1, 2, 3])
-    
-
-
-list_update()
 
 
 def list_sub():
