@@ -6,7 +6,7 @@
 #
 import os
 import sys
-from util.loggerUtil import *
+from util.logger_util import *
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -43,7 +43,7 @@ def io_open():
     infos(amsg)
 
 
-io_open()
+# io_open()
 
 
 def file_existence():
@@ -72,5 +72,30 @@ def read_demo2():
         total += 1
     print total
 
-# if __name__ == '__main__':
-#     read_demo2()
+
+def getCurrentPath():
+    """
+    兼容脚本执行和在pycharm两种方式的路径
+    """
+    if getattr(sys, 'frozen', False):
+        apply_path = os.path.dirname(sys.executable)
+    elif __file__:
+        apply_path = os.path.dirname(__file__)
+    return apply_path
+
+
+def get_all_dirs(path_source=None):
+    """
+    root dirs files 根据需要，遍历显示
+    """
+    if not path_source:
+        path_source = 'source'
+    file_list = []
+    for root, dirs, files in os.walk(path_source):
+        for filename in files:
+            file_list.append(filename)
+            print filename
+    return file_list
+
+
+get_all_dirs()

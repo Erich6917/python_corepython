@@ -4,7 +4,7 @@
 # @File    : NumbersBase.py
 # @Commment: 数字类型基础
 #
-from util.loggerUtil import *
+from util.logger_util import *
 from decimal import Decimal
 import random
 

@@ -6,7 +6,7 @@
 #
 
 import sys
-from util.loggerUtil import *
+from util.logger_util import *
 
 reload(sys)
 sys.setdefaultencoding('utf-8')

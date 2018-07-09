@@ -34,7 +34,7 @@ def t_match():
         print 'rt2 not match'
 
 
-t_match()
+# t_match()
 
 
 def findAllProvinces():
@@ -66,4 +66,17 @@ def findProvinces():
     for ii in out:
         print ii[0], ii[1]
 
+
 # findProvinces()
+
+
+def find_chars():
+    msg = ",.!，，D_NAME。！；‘’”“**dfs  #$%^&()-+1431221\"\"中           国123漢字かどうかのjavaを決定";
+    print 'BEFORE>{}'.format(msg)
+    clean_msg = re.sub(u"\s+\.\!\/_,$%^\*\(+\"\']+|[+——！，。？、~@#￥%……&*（）]+", "", msg)
+
+    # '|[+——！，。？、~@#￥%……&*（）]+'
+    print 'AFTER >{}'.format(clean_msg)
+
+
+find_chars()

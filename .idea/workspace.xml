@@ -2,9 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9b5de1-1643-41fe-92a2-41c6b53cb361" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/base/exception/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/base/list/DictBase.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/base/list/loop.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/base/schedule/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/tips/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/tips/i_args_kwargs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/tips/ii.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/tips/iii_generators.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/II.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/III.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/IV.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/V.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/VI.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/VII.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/VIII.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/X.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/ii_is_equal.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/file_check_util.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/classDefine/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/classDefine/file.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/classDefine/gc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/classDefine/my_email.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/classDefine/pyclass.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/classDefine/pyclasstest.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/icore/base/exception.py" afterPath="$PROJECT_DIR$/icore/base/exception/exception.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/icore/base/timer.py" afterPath="$PROJECT_DIR$/icore/base/date/timer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/corepython.iml" afterPath="$PROJECT_DIR$/.idea/corepython.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/icore/base/io/IOBASE.py" afterPath="$PROJECT_DIR$/icore/base/io/IOBASE.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/icore/base/list/dict_test.py" afterPath="$PROJECT_DIR$/icore/base/list/dict_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/icore/base/regex/regex2.py" afterPath="$PROJECT_DIR$/icore/base/regex/regex2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/DateCheckUtil.py" afterPath="$PROJECT_DIR$/util/DateCheckUtil.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/EmailSendUtil.py" afterPath="$PROJECT_DIR$/util/EmailSendUtil.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/loggerUtil.py" afterPath="$PROJECT_DIR$/util/loggerUtil.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,41 +47,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/corepython$DictBase.coverage" NAME="DictBase Coverage Results" MODIFIED="1524645549573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/icore/base/list" />
+    <SUITE FILE_PATH="coverage/corepython$ScheduleBase.coverage" NAME="ScheduleBase Coverage Results" MODIFIED="1524710869665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/icore/base/schedule" />
     <SUITE FILE_PATH="coverage/corepython$DateBase.coverage" NAME="DateBase Coverage Results" MODIFIED="1524488383213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/icore/base/date" />
+    <SUITE FILE_PATH="coverage/corepython$dict.coverage" NAME="dict Coverage Results" MODIFIED="1524644389150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/icore/base/list" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dict.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/icore/base/list/dict.py">
+      <file leaf-file-name="ScheduleBase.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1700">
+              <caret line="104" column="13" lean-forward="false" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+              <folding>
+                <element signature="e#143#172#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="timer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/icore/base/timer.py">
+      <file leaf-file-name="IOBASE.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/icore/base/io/IOBASE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exception.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/icore/base/exception.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="219">
+              <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,6 +92,7 @@
     <setting file="file://$PROJECT_DIR$/util/DateCheckUtil.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/util/EmailSendUtil.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/icore/base/date/DateBase.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -67,6 +103,11 @@
         <option value="$PROJECT_DIR$/util/PoemUtil.py" />
         <option value="$PROJECT_DIR$/icore/base/io/IOBASE.py" />
         <option value="$PROJECT_DIR$/icore/base/list/dict.py" />
+        <option value="$PROJECT_DIR$/icore/base/list/dict_test.py" />
+        <option value="$PROJECT_DIR$/icore/base/list/DictBase.py" />
+        <option value="$PROJECT_DIR$/icore/base/list/Pic.py" />
+        <option value="$PROJECT_DIR$/icore/base/strings/StringBaseTest.py" />
+        <option value="$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py" />
       </list>
     </option>
   </component>
@@ -88,16 +129,22 @@
             <id />
           </State>
           <State>
+            <id>Python</id>
+          </State>
+          <State>
             <id>Spelling</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>SpellCheckingInspection</id>
+            <id>PyUnresolvedReferencesInspection</id>
           </State>
         </selected-state>
       </profile-state>
     </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -114,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,18 +169,40 @@
               <item name="corepython" type="b2602c69:ProjectViewProjectNode" />
               <item name="corepython" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="corepython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corepython" type="462c0819:PsiDirectoryNode" />
+              <item name="icore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="corepython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corepython" type="462c0819:PsiDirectoryNode" />
+              <item name="icore" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="corepython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corepython" type="462c0819:PsiDirectoryNode" />
+              <item name="icore" type="462c0819:PsiDirectoryNode" />
+              <item name="high" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../April" />
     <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Personal\workspace\mygit_py2\corepython\icore\base\exception" />
+      <recent name="C:\Personal\workspace\mygit_py2\corepython\icore\base\date" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -146,7 +216,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.DateBase">
+  <component name="RunManager" selected="Python.ScheduleBase">
     <configuration name="DateBase" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -165,9 +235,72 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="DictBase" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/icore/base/list" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="corepython" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/icore/base/list/DictBase.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="ScheduleBase" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/icore/base/schedule" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="corepython" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/icore/base/list" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="corepython" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/icore/base/list/dict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python.DateBase" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dict" />
+      <item index="2" class="java.lang.String" itemvalue="Python.DictBase" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ScheduleBase" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.DateBase" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.ScheduleBase" />
+        <item index="1" class="java.lang.String" itemvalue="Python.DictBase" />
+        <item index="2" class="java.lang.String" itemvalue="Python.dict" />
+        <item index="3" class="java.lang.String" itemvalue="Python.DateBase" />
       </list>
     </recent_temporary>
   </component>
@@ -224,17 +357,24 @@
       <option name="project" value="LOCAL" />
       <updated>1524637492468</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Base-idea ?">
+      <created>1524637817007</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1524637817007</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27231467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31578946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28947368" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -267,6 +407,64 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="104" column="13" lean-forward="false" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+          <folding>
+            <element signature="e#143#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icore/base/io/IOBASE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="104" column="13" lean-forward="false" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+          <folding>
+            <element signature="e#143#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icore/base/io/IOBASE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="62" column="33" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icore/base/csv/MyCsv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icore/base/list/dict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3400">
+          <caret line="200" column="36" lean-forward="true" selection-start-line="200" selection-start-column="36" selection-end-line="200" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icore/base/list/DictBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icore/base/list/Pic.py" />
     <entry file="file://$PROJECT_DIR$/icore/base/io/IOBASE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -286,7 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -358,7 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -366,15 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icore/base/io/IOBASE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -382,62 +569,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/icore/base/list/dict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icore/base/randmon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icore/base/tuple.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icore/base/unicode.py">
+    <entry file="file://$PROJECT_DIR$/icore/base/randmon.py" />
+    <entry file="file://$PROJECT_DIR$/icore/base/tuple.py" />
+    <entry file="file://$PROJECT_DIR$/icore/base/unicode.py" />
+    <entry file="file://$PROJECT_DIR$/icore/base/io.py" />
+    <entry file="file://$PROJECT_DIR$/icore/base/list/dict_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/icore/base/io.py">
+    <entry file="file://$PROJECT_DIR$/icore/base/list/DictBase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1275">
-          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="592">
+          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/icore/base/timer.py">
+    <entry file="file://$PROJECT_DIR$/icore/base/list/Pic.py" />
+    <entry file="file://$PROJECT_DIR$/icore/base/list/dict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="200" column="36" lean-forward="false" selection-start-line="200" selection-start-column="36" selection-end-line="200" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icore/base/csv/MyCsv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icore/base/date/timer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/icore/base/exception.py">
+    <entry file="file://$PROJECT_DIR$/icore/base/strings/StringBaseTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icore/base/exception/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../WebApplication/python27/Lib/site-packages/APScheduler-3.3.1-py2.7.egg/apscheduler/schedulers/background.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="104" column="13" lean-forward="false" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+          <folding>
+            <element signature="e#143#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icore/base/io/IOBASE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
           <folding />
         </state>
       </provider>

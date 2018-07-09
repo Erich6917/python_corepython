@@ -6,7 +6,7 @@
 #
 
 from datetime import timedelta, datetime, date
-from util.loggerUtil import *
+from util.logger_util import *
 import time
 
 

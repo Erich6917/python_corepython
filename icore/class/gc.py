@@ -3,7 +3,7 @@
 # @Author  : LIYUAN134
 # @Site    : 
 # @File    : gc.py
-# @sommment: 继承测试
+# @Comment : 继承测试
 #
 
 

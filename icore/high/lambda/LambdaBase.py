@@ -4,7 +4,7 @@
 # @File    : LambdaBase.py
 # @Commment: 
 #
-from util.loggerUtil import *
+from util.logger_util import *
 
 """
 可以这样认为,lambda作为一个表达式，定义了一个匿名函数，上例的代码x为入口参数，x+1为函数体。
