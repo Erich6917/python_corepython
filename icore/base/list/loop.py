@@ -17,4 +17,15 @@ def demo1():
     print a
 
 
-demo1()
+def demo2():
+    dataSet = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+    for i in range(2):
+        featList = [example[i] for example in dataSet]
+        print featList
+
+
+demo2()
