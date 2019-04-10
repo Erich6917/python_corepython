@@ -18,6 +18,7 @@ import numpy as np
 import wave
 import subprocess
 from PIL import Image
+import json
 from PIL import ImageGrab
 
 
@@ -208,7 +209,7 @@ def ffmpeg_get_jpg(srcWav, dstPicDir, frameRate):
     foldPrepare(dstPicDir)
     pa, Name = os.path.split(srcWav)
     pureName, ext = os.path.splitext(Name)
-    if (ext == '.mkv') or (ext == '.rmvb') or (ext == '.mp4'):
+    if (ext == '.mkv') or (ext == '.rmvb') or (ext == '.mp4') :
         # strcmd = 'ffmpeg -i '+file0+" -ar 16000 -ac 1 "+file0[:-4]+'.wav'
         # strcmd =  ffmpeg -ss 300 -i wdyzzbp.mkv -to 600 -ar 16000 -ac 1 wdyzzbp.mkv-300-600-1ch-16k.wav
         # strcmd = 'ffmpeg -ss 300 -i wdyzzbp.mkv -to 600 -copyts -vf fps=3  /Users/king/Desktop/codec/py_ocr/wdyzzbp-3frt/wdyzzbp_3frt-%d.jpg
@@ -223,7 +224,7 @@ def ffmpeg_get_jpg(srcWav, dstPicDir, frameRate):
     return 0
 
 
-def cut_batch(dstPicDir, dstPicDir_cut):
+def cut_batch(dstPicDir, dstPicDir_cut,len_to_end):
     # /Users/king/Desktop/codec/py_ocr/wdyzzbp-3frt/ /Users/king/Desktop/codec/py_ocr/wdyzzbp-3frt-cut/
     srcDir = dstPicDir
     cutDir = dstPicDir_cut
@@ -258,7 +259,9 @@ def cut_batch(dstPicDir, dstPicDir_cut):
             # box = (0,hig-70,llen,hig)  （tmz)
             # box = (0,hig-60,llen,hig-30)
             # box = (0,hig-65,llen,hig-25) (tyzl)
-            box = (0, hig - 110, llen, hig - 73)
+            # box = (0, hig - 110, llen, hig - 73)
+            #box = (0, hig - 70, llen, hig - 20) 我的恶魔
+            box = (100, hig - (len_to_end+50), llen-100, hig - 50)
             img = image.crop(box)
             # img.show()
             # 保存 
@@ -268,8 +271,7 @@ def cut_batch(dstPicDir, dstPicDir_cut):
             print("  " + str(cnt) + '/' + str(N))
         print(" ::: <cut_batch> succeed finished  ~ ~")
 
-
-if __name__ == "__main__":
+def start_demo():
     # s1: check paras;
     print(sys.argv[0])
     if len(sys.argv) != 4:
@@ -278,13 +280,14 @@ if __name__ == "__main__":
         sys.exit()
     srcWav = sys.argv[1]
     dstDir = sys.argv[2]
-    frameRate = int(sys.argv[3])
+    len_to_end = sys.argv[3]
+    frameRate = 1  # int(sys.argv[3])
     # fTime = float(sys.argv[4])
     # set by hand :
     Fs = 16000
     chNum = 1
-    sTime = 300  # sec
-    eTime = 600  # sec
+    sTime = 5 * 60  # sec
+    eTime = 40 * 60  # sec
 
     pa, Name = os.path.split(srcWav)
     pureName, ext = os.path.splitext(Name)
@@ -297,8 +300,81 @@ if __name__ == "__main__":
         removeALL(dstPicDir_cut)
     ffmpeg_get_audio(srcWav, tarAudio, Fs, chNum, sTime, eTime)
     ffmpeg_get_jpg(srcWav, dstPicDir, frameRate)
-    cut_batch(dstPicDir, dstPicDir_cut)
-    # ocr process ;
 
+    #
+    # cut_batch(dstPicDir, dstPicDir_cut,len_to_end)
+
+    # ocr process ;
     # getSegWav(srcWav,srcTxt,dstWavDir,frameRate,fTime)
-    #   python py_mv_pic_ocr_spe.py /Users/king/Desktop/codec/py_movie_pic_ocr_speech/wdyzzbp.mkv /Users/king/Desktop/codec/py_movie_pic_ocr_speech/dest 1 1
+
+    #   python py_mv_pic_ocr_spe.py /Users/king/Desktop/codec/py_movie_pic_ocr_speech/wdyzzbp.mkv /Users/king/Desktop/codec/py_movie_pic_ocr_speech/dest
+
+# def start_loop():
+#
+
+def get_all_files_path_name(path_source='.'):
+    file_list = []
+    for root, dirs, files in os.walk(path_source):
+        for filename in files:
+            file_msg = filename, os.path.join(root, filename), root
+            file_list.append(file_msg)
+    return file_list
+def getLenTime(filename):
+    command = ["ffprobe.exe","-loglevel","quiet","-print_format","json","-show_format","-show_streams","-i",filename]
+    result = subprocess.Popen(command,shell=True,stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
+    out = result.stdout.read()
+    # temp = str(out.decode('gbk'))
+    data = json.loads(out)["format"]['duration']
+    return int(float(data))
+
+def getTimeSec(file0):
+    import librosa
+    y,sr = librosa.load(file0,sr=None)
+    timeLenSec = librosa.get_duration(y,sr)
+
+    return timeLenSec
+
+if __name__ == "__main__":
+    # s1: check paras;
+    # print(sys.argv[0])
+    # if len(sys.argv) != 4:
+    #     print(len(sys.argv))
+    #     print('usage: ' + sys.argv[0] + ' srcWav dstDir frameRate')
+    #     sys.exit()
+    source_path = 'D:/yuan/movie'
+    file_list = get_all_files_path_name(source_path)
+    for each in file_list:
+        file_name,file_path = each[0],each[1]
+        print file_name.decode('gbk')
+        time_total = getLenTime(file_path)
+        if time_total < 5*60:
+            print '时长小于10分钟，跳过',file_name
+            continue
+
+
+        srcWav = file_path #sys.argv[1]
+        dstDir = os.path.join(source_path,'aout2')#sys.argv[2]
+        # len_to_end = #sys.argv[3]
+        frameRate = 1  # int(sys.argv[3])
+        # fTime = float(sys.argv[4])
+        # set by hand :
+        Fs = 16000
+        chNum = 1
+        sTime = 3 * 60  # sec
+        eTime = time_total - 5*60  # sec
+        print 3*60 ,time_total - 5*60
+
+        pa, Name = os.path.split(srcWav)
+        pureName, ext = os.path.splitext(Name)
+
+        dstPicDir = os.path.join(dstDir, pureName + '-' + str(sTime) + '-' + str(eTime) + '-pic-dir-full')
+        dstPicDir_cut = os.path.join(dstDir, pureName + '-' + str(sTime) + '-' + str(eTime) + 'pic-dir-cut')
+        tarAudio = os.path.join(dstDir, pureName + '-' + str(sTime) + '-' + str(eTime) + '-1ch-16k.wav')
+
+        if os.path.isdir(dstPicDir):
+            removeALL(dstPicDir_cut)
+        ffmpeg_get_audio(srcWav, tarAudio, Fs, chNum, sTime, eTime)
+        ffmpeg_get_jpg(srcWav, dstPicDir, frameRate)
+
+        # cut_batch(dstPicDir, dstPicDir_cut, len_to_end)
+

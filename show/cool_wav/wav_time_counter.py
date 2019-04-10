@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
-import os
-import re
+# @Time    : 2019/4/8
+# @Author  : ErichLee ErichLee@qq.com
+# @File    : pic_mv_cut.py
+# @Comment : wav时间计算
+#
 
+import os
 import librosa
 
 
@@ -23,7 +27,7 @@ def getTimeLenSec(file0):
 
 
 def start():
-    src_dir = 'wav'
+    src_dir = 'source'
     format_end = '.wav'
     file_list = traveseFileFmt2(src_dir, format_end)
 
@@ -41,7 +45,7 @@ def start():
         counter += 1
         output_msg = '{} {} [ {} ]  > {} \n'.format(output_msg, counter, file0, time_len)
 
-    with open('aa.txt', 'w') as file:
+    with open('output/rt_times.txt', 'w') as file:
         time_second = round(time_all, 0)
         # time_minute = time_second / 60
         time_hour = round(time_second / (60 * 60), 4)
