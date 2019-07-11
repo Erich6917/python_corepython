@@ -8,20 +8,28 @@
 import sys
 import os
 import re
-import util.file_check_util as file_util
+
+# import util.file_check_util as file_util
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
-def start():
-    path_list = [
-        u'D:\movie-output\Acut&text\HW之破晓之战-03-180-3611-pic-dir-full',
-    ]
+def get_curr_dirs(path_source='.'):
+    rt_dirs = []
+    for filename in os.listdir(path_source):
+        path = os.path.join(path_source, filename)
+        if os.path.isdir(path):
+            rt_dirs.append(path)
+    return rt_dirs
 
-    path_list = get_all_dirs(u'D:\movie-output\Acut&text')
-    for path in path_list:
-        start_delete(path)
+
+def start():
+    dir_list = get_curr_dirs(u'source')
+    for dir in dir_list:
+        path_list = get_all_dirs(dir)
+        for path in path_list:
+            start_delete(path)
 
 
 def get_all_dirs(path_source='.'):
@@ -43,7 +51,7 @@ def get_all_files_path_name(path_source='.'):
 
 
 def start_delete(path):
-    file_list = file_util.get_all_files_path_name(path)
+    file_list = get_all_files_path_name(path)
     if not file_list:
         raise Exception('Not Found!')
 

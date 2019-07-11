@@ -7,7 +7,8 @@
 
 import os
 import librosa
-
+import subprocess
+import json
 
 def traveseFileFmt2(file_dir, frmStr):
     fileList = []
@@ -25,10 +26,18 @@ def getTimeLenSec(file0):
 
     return timeLen
 
+def getLenTime(filename):
+    command = ["ffprobe.exe","-loglevel","quiet","-print_format","json","-show_format","-show_streams","-i",filename]
+    result = subprocess.Popen(command,shell=True,stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
+    out = result.stdout.read()
+    # temp = str(out.decode('gbk'))
+    data = json.loads(out)["format"]['duration']
+    return int(float(data))
+
 
 def start():
-    src_dir = 'source'
-    format_end = '.wav'
+    src_dir = u'E:/clean-fayuan/Batch2-20190610/wav_source'
+    format_end = u'.wav'
     file_list = traveseFileFmt2(src_dir, format_end)
 
     if not file_list:
@@ -40,7 +49,7 @@ def start():
     counter = 0
     for file0 in file_list:
         # newName = strrepWT(file0, src_dir, dst_dir)
-        time_len = getTimeLenSec(file0)
+        time_len = getLenTime(file0)
         time_all = time_all + time_len
         counter += 1
         output_msg = '{} {} [ {} ]  > {} \n'.format(output_msg, counter, file0, time_len)

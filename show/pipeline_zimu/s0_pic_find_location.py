@@ -25,7 +25,7 @@ def cv_imread(filePath):
     return cv_img
 
 
-pic_path = u'D:/yuan/aout/ap2/因为爱你/因为爱你[2018]-05-180-2404-pic-dir-full/因为爱你[2018]-05_1frt-42.jpg'
+pic_path = u'D:/yuan/step1-pic-full/batch4-20190530/need/zhandiqiangwang/zhandiqiangwang-07-180-2363-pic-dir-full/zhandiqiangwang-07_1frt-21.jpg'
 img = cv_imread(pic_path)
 
 

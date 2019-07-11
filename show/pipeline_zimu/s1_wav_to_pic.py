@@ -346,7 +346,7 @@ if __name__ == "__main__":
     #     print(len(sys.argv))
     #     print('usage: ' + sys.argv[0] + ' srcWav dstDir frameRate')
     #     sys.exit()
-    source_path = 'C:/Data/wav'
+    source_path = 'D:/yuan/step0-movie-finish/batch4-20190530'
     file_list = get_all_files_path_name(source_path)
     for each in file_list:
         file_name, file_path = each[0], each[1]
@@ -357,7 +357,7 @@ if __name__ == "__main__":
             continue
 
         srcWav = file_path  # sys.argv[1]
-        dstDir = os.path.join(source_path, 'aout2')  # sys.argv[2]
+        dstDir = os.path.join(source_path, 'aout')  # sys.argv[2]
         # len_to_end = #sys.argv[3]
         frameRate = 1  # int(sys.argv[3])
         # fTime = float(sys.argv[4])
