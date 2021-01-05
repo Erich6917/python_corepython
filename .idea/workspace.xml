@@ -1,43 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a9b5de1-1643-41fe-92a2-41c6b53cb361" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/base/exception/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/base/list/DictBase.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/base/list/loop.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/base/schedule/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/tips/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/tips/i_args_kwargs.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/tips/ii.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/tips/iii_generators.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/II.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/III.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/IV.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/V.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/VI.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/VII.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/VIII.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/X.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icore/topic/ii_is_equal.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/file_check_util.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/classDefine/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/classDefine/file.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/classDefine/gc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/classDefine/my_email.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/classDefine/pyclass.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/classDefine/pyclasstest.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/icore/base/exception.py" afterPath="$PROJECT_DIR$/icore/base/exception/exception.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/icore/base/timer.py" afterPath="$PROJECT_DIR$/icore/base/date/timer.py" />
+    <list default="true" id="8a9b5de1-1643-41fe-92a2-41c6b53cb361" name="Default" comment="Base-idea ?">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/enemy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/helpButton.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/helpButtonFilled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/helpPage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/player.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/wall.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/cool_file/AspPcm2Wav.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/app_class.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/enemy_class2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/maze_class.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/module_manager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/player_class.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show/game/test.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/class/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/class/file.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/class/gc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/class/jsj.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/class/my_email.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/class/pyclass.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/class/pyclasstest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/build/pyinstallDemo/out00-Analysis.toc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/build/pyinstallDemo/out00-EXE.toc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/build/pyinstallDemo/out00-PKG.pkg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/build/pyinstallDemo/out00-PKG.toc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/build/pyinstallDemo/out00-PYZ.pyz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/build/pyinstallDemo/out00-PYZ.toc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/build/pyinstallDemo/pyinstallDemo.exe.manifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/build/pyinstallDemo/warnpyinstallDemo.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/build/pyinstallDemo/xref-pyinstallDemo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/dist/pyinstallDemo.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/dist/source/1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/dist/source/2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/pyinstallDemo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/pyinstallDemo.spec" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/source/1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/icore/deploy/source/2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/show/cool_wav/source/BAC009S0002W0146.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/show/cool_wav/source/BAC009S0002W0147.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/show/cool_wav/source/BAC009S0002W0148.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/show/cool_wav/source/BAC009S0002W0149.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/show/cool_wav/source/BAC009S0002W0150.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/show/cool_wav/source/aa/BAC009S0002W0145.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/show/cool_wav/source/aa/bb/BAC009S0002W0148.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/show/pipeline_fayuan/ReadME.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/show/pipeline_fayuan/s0_move.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/show/pipeline_fayuan/__init__.py" afterPath="$PROJECT_DIR$/show/game/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/corepython.iml" afterPath="$PROJECT_DIR$/.idea/corepython.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/icore/base/io/IOBASE.py" afterPath="$PROJECT_DIR$/icore/base/io/IOBASE.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/icore/base/list/dict_test.py" afterPath="$PROJECT_DIR$/icore/base/list/dict_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/icore/base/regex/regex2.py" afterPath="$PROJECT_DIR$/icore/base/regex/regex2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/DateCheckUtil.py" afterPath="$PROJECT_DIR$/util/DateCheckUtil.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/EmailSendUtil.py" afterPath="$PROJECT_DIR$/util/EmailSendUtil.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/loggerUtil.py" afterPath="$PROJECT_DIR$/util/loggerUtil.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/__init__.py" afterPath="$PROJECT_DIR$/show/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/cool_file/file_rename.py" afterPath="$PROJECT_DIR$/show/cool_file/file_rename.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,23 +71,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ScheduleBase.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py">
+      <file leaf-file-name="pic_mv_cut.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/tips/pic_mv_cut.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="104" column="13" lean-forward="false" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
-              <folding>
-                <element signature="e#143#172#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IOBASE.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/icore/base/io/IOBASE.py">
+      <file leaf-file-name="s0_pic_find_location.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/pipeline_zimu/s0_pic_find_location.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zip_file.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/cool_zip/zip_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wav_time_counter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/cool_wav/wav_time_counter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wav_caiyanglv.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/cool_wav/wav_caiyanglv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_rename.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/show/cool_file/file_rename.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1020">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AspPcm2Wav.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/cool_file/AspPcm2Wav.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-807">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_common_util.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/cool_file/file_common_util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="s1_wav_to_pic.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/pipeline_zimu/s1_wav_to_pic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5975">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="s2_pic_to_zimu.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/pipeline_zimu/s2_pic_to_zimu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1572">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,8 +184,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/util/DateCheckUtil.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/util/EmailSendUtil.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/icore/base/date/DateBase.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py" root0="SKIP_INSPECTION" />
   </component>
@@ -118,6 +211,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="6" />
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
@@ -162,6 +256,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,33 +264,15 @@
               <item name="corepython" type="b2602c69:ProjectViewProjectNode" />
               <item name="corepython" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="corepython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="corepython" type="462c0819:PsiDirectoryNode" />
-              <item name="icore" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="corepython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="corepython" type="462c0819:PsiDirectoryNode" />
-              <item name="icore" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="corepython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="corepython" type="462c0819:PsiDirectoryNode" />
-              <item name="icore" type="462c0819:PsiDirectoryNode" />
-              <item name="high" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../April" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
@@ -364,31 +441,38 @@
       <option name="project" value="LOCAL" />
       <updated>1524637817007</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Base-idea">
+      <created>1609827324179</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609827324179</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27231467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28947368" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28947368" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,41 +484,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Base-时间" />
     <MESSAGE value="Base-idea ?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base-idea ?" />
+    <MESSAGE value="Base-idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base-idea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="104" column="13" lean-forward="false" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
-          <folding>
-            <element signature="e#143#172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icore/base/io/IOBASE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="104" column="13" lean-forward="false" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
-          <folding>
-            <element signature="e#143#172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/icore/base/io/IOBASE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -480,13 +537,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/EmailSendUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/util/EmailSendUtil.py" />
     <entry file="file://$PROJECT_DIR$/icore/base/excel/RwExcelUtil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -494,13 +545,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/DateCheckUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/util/DateCheckUtil.py" />
     <entry file="file://$PROJECT_DIR$/icore/base/date/DateBase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -529,35 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/DateCheckUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/PoemUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/loggerUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/EmailSendUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/util/DateCheckUtil.py" />
+    <entry file="file://$PROJECT_DIR$/util/PoemUtil.py" />
+    <entry file="file://$PROJECT_DIR$/util/loggerUtil.py" />
+    <entry file="file://$PROJECT_DIR$/util/EmailSendUtil.py" />
     <entry file="file://$PROJECT_DIR$/icore/base/strings/StringsBase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -626,16 +646,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../WebApplication/python27/Lib/site-packages/APScheduler-3.3.1-py2.7.egg/apscheduler/schedulers/background.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../WebApplication/python27/Lib/site-packages/APScheduler-3.3.1-py2.7.egg/apscheduler/schedulers/background.py" />
     <entry file="file://$PROJECT_DIR$/icore/base/schedule/ScheduleBase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
+        <state relative-caret-position="0">
           <caret line="104" column="13" lean-forward="false" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
           <folding>
             <element signature="e#143#172#0" expanded="true" />
@@ -645,8 +659,136 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/icore/base/io/IOBASE.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="-36">
           <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/pipeline_fayuan/s0_move.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/tips/bank_col.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/tips/getSegWav.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/tips/p5_getTimeSta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/tips/pic_find_location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/tips/py_mv_pic_spe_win.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/tips/pic_mv_cut.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/pipeline_zimu/s2_pic_to_zimu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1572">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/pipeline_zimu/s1_wav_to_pic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5975">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/pipeline_zimu/s0_pic_find_location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/cool_zip/zip_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/cool_wav/wav_time_counter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/cool_wav/wav_caiyanglv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/cool_file/AspPcm2Wav.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-807">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/cool_file/file_common_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/cool_file/file_rename.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
