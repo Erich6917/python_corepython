@@ -21,11 +21,21 @@ def file_rename(path_old, path_new):
 
 # 把当前目录下的文件 重命名
 def start_file_rename():
-    path = u'D:/yuan/movie/Att'
+    path = u'D:/video/Batch04-20190814（未处理）==未审核/WAV/output/output/out'
     movie_name = os.listdir(path)
     for temp in movie_name:
-        new_name = temp.replace(u'D到烟暖雨收第三季', u'DDyys')
-        file_rename(path + '/' + temp, path + '/' + new_name)
+        # new_name = str(100)+temp
+        new_name = re.sub('[^0-9a-zA-Z]', '', temp)
+        new_name = new_name.replace('wav', '.wav')
+        print path + '/' + temp, path + '/' + new_name
+        try:
+            file_rename(path + '/' + temp, path + '/' + new_name)
+        except Exception as e:
+            print e
+        # print path + '/' + temp, path + '/' + new_name
+
+
+start_file_rename()
 
 
 #
@@ -35,7 +45,6 @@ def start_file_read_create_rename():
     file_list = file_util.get_curr_files(source_path)
     p = Pinyin()
     for file_name, file_path in file_list:
-        # print file_name, file_path
         name_old, name_seq = file_name.split('-')[0], file_name.split('-')[1]
         name_deal = re.sub('[a-zA-Z]', '', name_old)
         if name_deal:
@@ -43,16 +52,12 @@ def start_file_read_create_rename():
             file_name = '{}-{}'.format(folder_name, name_seq)
         else:
             folder_name = name_old
-
         # 创建目标路径
         output_path = os.path.join(source_path, output_source, folder_name)
         if not os.path.exists(output_path):
             os.makedirs(output_path)
         print 'rename', file_path, os.path.join(output_path, file_name)
         file_rename(file_path, os.path.join(output_path, file_name))
-        # rename
-        # p = Pinyin()
-        # print p.get_pinyin(u"上海r")
 
 
 def check_contain_chinese(check_str):
@@ -81,8 +86,8 @@ def get_pinyin(word_chinese):
 
 # 替换所有中文
 def start_file_create_all():
-    source_path = u'C:/FFOutput/wav'
-    output_source = u'C:/FFOutput/wav/aout'
+    source_path = u'D:/video/Batch04-20190814（未处理）==未审核/WAV/output/output'
+    output_source = u'D:/video/Batch04-20190814（未处理）==未审核/WAV/output/output/out'
 
     file_list = file_util.get_curr_files(source_path)
     for file_name, file_path in file_list:
@@ -93,7 +98,7 @@ def start_file_create_all():
 
             new_name = '{}{}'.format(get_pinyin(name), ends)
             # 创建目标路径
-            output_path = os.path.join(source_path,output_source)
+            output_path = os.path.join(source_path, output_source)
             if not os.path.exists(output_path):
                 os.makedirs(output_path)
 
@@ -106,5 +111,9 @@ def start_file_create_all():
             print 'ERROR 匹配失败'
 
 
-# start_file_read_create_rename()
-start_file_create_all()
+            # start_file_read_create_rename()
+            # start_file_create_all()
+            # start_file_rename()
+
+            # start_file_create_all()
+# start_file_create_all()
